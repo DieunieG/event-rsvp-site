@@ -1,0 +1,695 @@
+/*** VSCodeEDU preview fix 
+
+  Purpose:
+  - Fix VSCodeEDU issue that causes a white border to show around
+    the preview window
+
+  When To Modify:
+  - If you change the background color of your webpage, you may need to update this rule too.
+***/
+html {
+  background-color: var(--bg-color);
+}
+
+/*** body ***
+
+Purpose:
+- Add style rules for the body of your webpage
+- This is useful if you want a rule to apply to EVERYTHING on your page
+  - (Tip: You can always override these rules later in the stylesheet)
+
+When To Modify:
+- [ ] Project 3 (REQUIRED FEATURE) 
+- [ ] Any time after
+***/
+body {
+  background-color: var(--bg-color);
+  font-size: 18px;
+  color: var(--text-color);
+  font-family: 'Poppins', sans-serif;
+  margin: 50px;
+  text-align: center;
+}
+
+/*** Text ***
+
+Purpose: 
+- Add style rules for headings (h1-6),
+  paragraphs (p), links (a), and buttons
+
+When To Modify:
+- [X] Project 3 (REQUIRED FEATURE) 
+- [ ] Any time after
+***/
+
+h1 {
+  font-family: 'Pacifico', cursive;
+  font-size: 50px;
+  color: var(--heading-color);
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  text-shadow: 2px 2px 12px var(--shadow-color);
+  animation: sparkle 1.5s infinite alternate;
+}
+
+/*** Fun sparkle animation for the title ***/
+@keyframes sparkle {
+  0% { text-shadow: 2px 2px 10px var(--shadow-color); }
+  100% { text-shadow: 4px 4px 15px var(--shadow-color); }
+}
+
+h2, h3, h4 {
+  color: var(--heading-color);
+  font-weight: bold;
+}
+
+p {
+  font-size: 18px;
+  line-height: 1.6;
+}
+
+/*** Link Styling ***/
+a {
+  color: var(--heading-color);
+  text-decoration: none;
+  font-weight: bold;
+  padding: 5px;
+  border-radius: 8px;
+  transition: 0.3s;
+}
+
+a:hover {
+  color: white;
+  background-color: var(--button-hover);
+  padding: 6px 12px;
+  box-shadow: 0px 4px 10px var(--shadow-color);
+}
+
+/*** Button Styling ***/
+button {
+  background-color: var(--button-color);
+  color: white;
+  border: 3px solid white;
+  padding: 10px 20px;
+  border-radius: 30px;
+  font-size: 18px;
+  text-transform: uppercase;
+  cursor: pointer;
+  transition: all 0.4s ease-in-out;
+  box-shadow: 0px 3px 8px var(--shadow-color);
+}
+
+button:hover {
+  background-color: white;
+  color: var(--button-hover);
+  transform: scale(1.1);
+  border: 3px solid var(--button-hover);
+}
+
+/*** header ***
+
+Purpose:
+- Add style rules for your website's header section
+
+When To Modify:
+- [X] Project 3 (REQUIRED FEATURE) 
+- [ ] Project 4 (REQUIRED FEATURE) 
+- [ ] Any time after
+***/
+.header-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 20px;
+  background: linear-gradient(90deg, var(--button-color), var(--button-hover));
+  color: white;
+  box-shadow: 0px 4px 10px var(--shadow-color);
+  border-radius: 15px;
+}
+
+.logo img {
+  max-height: 60px;
+}
+
+.nav ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+}
+
+.nav ul li {
+  margin: 0 15px;
+}
+
+.nav ul li a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+  transition: color 0.3s;
+}
+
+.nav ul li a:hover {
+  color: var(--accent-color-dark);
+}
+
+/*** footer ***
+
+Purpose:
+- Add style rules for your website's footer section
+
+When To Modify:
+- [ ] Project 3 (STRETCH FEATURE) 
+- [ ] Any time after
+***/
+.footer {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  background: linear-gradient(90deg, var(--footer-bg), var(--border-color));
+  color: var(--text-color);
+  text-align: center;
+  padding: 15px;
+  font-size: 16px;
+  font-weight: bold;
+  border-top: 4px solid var(--button-hover);
+  box-shadow: 0px -4px 10px var(--shadow-color);
+}
+
+.footer:hover {
+  background: linear-gradient(90deg, var(--button-hover), var(--button-color));
+  color: white;
+  text-shadow: 2px 2px 10px var(--shadow-color);
+  transition: all 0.4s ease-in-out;
+}
+
+/*** Schedule Section ***
+
+Purpose:
+- Add style rules for your website's Schedule section
+
+When To Modify:
+- [ ] Project 3 (OPTIONAL)
+- [ ] Project 4 (STRETCH FEATURE) 
+- [ ] Any time after
+***/
+.schedule {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+  padding: 40px 20px;
+}
+
+.event img {
+  max-width: 100%;
+  border-radius: 10px;
+}
+
+/*** Links Section ***
+
+Purpose:
+- Add style rules for your website's Links section
+
+When To Modify:
+- [ ] Project 3 (OPTIONAL)
+- [ ] Project 4 (STRETCH FEATURE) 
+- [ ] Any time after
+***/
+#links {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 30px;
+  padding: 40px 20px;
+}
+
+#links article {
+  max-width: 600px;
+}
+
+/*** RSVP [PLACEHOLDER] [ADDED IN UNIT 6] ***/
+.rsvp-container {
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+  width: 100%;
+  padding-bottom: 50px;
+  padding-top: 20px;
+}
+
+.rsvp-para {
+  width: 55%;
+  padding-right: 10px;
+  font-size: 1.1rem;
+  color: #6c007b;
+}
+
+.rsvp-participants {
+  width: 45%;
+  padding-right: 10px;
+  font-size: 1rem;
+  color: #8a008a;
+}
+
+#rsvp {
+  margin-top: 40px;
+  background: #ffe6f7;
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: 0 0 15px rgba(255, 182, 193, 0.4);
+}
+
+#rsvp-button {
+  margin-top: 10px;
+  padding: 10px 20px;
+  background-color: #ff69b4;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+#rsvp-button:hover {
+  background-color: #ff1493;
+}
+
+
+/*** Animations [PLACEHOLDER] [ADDED IN UNIT 8] ***/
+/*** Success Modal [PLACEHOLDER] [ADDED IN UNIT 9] ***/
+/*** Success Modal ***/
+
+.modal {
+  display: none;         /* hidden by default */
+  position: fixed;
+  z-index: 2;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.4); /* overlay effect */
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.modal-container {
+  padding: 50px;
+  width: 55%;
+  background-color: pink;
+  color: black;
+  text-align: center;
+  font-size: 1rem;
+  font-family: monospace;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.modal-item {
+  margin: 10px;
+}
+
+/*** Dark Mode [PLACEHOLDER] [ADDED IN UNIT 5] ***/
+
+/*** Custom Colors (OPTIONAL) ***
+
+
+Purpose:
+- Use CSS variables to define custom colors for your website
+- To get you started, we've provided the color scheme used in our example site.
+- To reference a color variable in your css, use var(--variable-name) in place of a color value
+
+When To Modify:
+- [ ] Any time (OPTIONAL)
+***/
+:root {
+  /* Light Mode */
+  --bg-color: #ffeaf4;
+  --text-color: #6a0572;
+  --heading-color: #ff5e99;
+  --button-color: #ff99cc;
+  --button-hover: #ff66b2;
+  --border-color: #ffb3d9;
+  --footer-bg: #ffdbed;
+  --shadow-color: rgba(255, 105, 180, 0.5);
+  
+
+  /* Dark Mode */
+  --bg-color-dark-mode: #3e3377;
+  --text-color-dark-mode: #fff;
+
+  /* Accent Colors */
+  --accent-color-light: #d2cff5;
+  --accent-color-medium: #684fb5;
+  --accent-color-dark: #482f95;
+  --accent-color-darkest: #231942;
+  --accent-color-green: #28eb76;
+
+  /* Error Colors */
+  --error-color: #f8bbd0;
+  --error-color-border: #e63946;
+}
+/*** VSCodeEDU preview fix 
+
+  Purpose:
+  - Fix VSCodeEDU issue that causes a white border to show around
+    the preview window
+
+  When To Modify:
+  - If you change the background color of your webpage, you may need to update this rule too.
+***/
+html {
+  background-color: var(--bg-color);
+}
+
+/*** body ***
+
+Purpose:
+- Add style rules for the body of your webpage
+- This is useful if you want a rule to apply to EVERYTHING on your page
+  - (Tip: You can always override these rules later in the stylesheet)
+
+When To Modify:
+- [ ] Project 3 (REQUIRED FEATURE) 
+- [ ] Any time after
+***/
+body {
+  background-color: var(--bg-color);
+  font-size: 18px;
+  color: var(--text-color);
+  font-family: 'Poppins', sans-serif;
+  margin: 50px;
+  text-align: center;
+}
+
+/*** Text ***
+
+Purpose: 
+- Add style rules for headings (h1-6),
+  paragraphs (p), links (a), and buttons
+
+When To Modify:
+- [X] Project 3 (REQUIRED FEATURE) 
+- [ ] Any time after
+***/
+
+h1 {
+  font-family: 'Pacifico', cursive;
+  font-size: 50px;
+  color: var(--heading-color);
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  text-shadow: 2px 2px 12px var(--shadow-color);
+  animation: sparkle 1.5s infinite alternate;
+}
+
+/*** Fun sparkle animation for the title ***/
+@keyframes sparkle {
+  0% { text-shadow: 2px 2px 10px var(--shadow-color); }
+  100% { text-shadow: 4px 4px 15px var(--shadow-color); }
+}
+
+h2, h3, h4 {
+  color: var(--heading-color);
+  font-weight: bold;
+}
+
+p {
+  font-size: 18px;
+  line-height: 1.6;
+}
+
+/*** Link Styling ***/
+a {
+  color: var(--heading-color);
+  text-decoration: none;
+  font-weight: bold;
+  padding: 5px;
+  border-radius: 8px;
+  transition: 0.3s;
+}
+
+a:hover {
+  color: white;
+  background-color: var(--button-hover);
+  padding: 6px 12px;
+  box-shadow: 0px 4px 10px var(--shadow-color);
+}
+
+/*** Button Styling ***/
+button {
+  background-color: var(--button-color);
+  color: white;
+  border: 3px solid white;
+  padding: 10px 20px;
+  border-radius: 30px;
+  font-size: 18px;
+  text-transform: uppercase;
+  cursor: pointer;
+  transition: all 0.4s ease-in-out;
+  box-shadow: 0px 3px 8px var(--shadow-color);
+}
+
+button:hover {
+  background-color: white;
+  color: var(--button-hover);
+  transform: scale(1.1);
+  border: 3px solid var(--button-hover);
+}
+
+/*** header ***
+
+Purpose:
+- Add style rules for your website's header section
+
+When To Modify:
+- [X] Project 3 (REQUIRED FEATURE) 
+- [ ] Project 4 (REQUIRED FEATURE) 
+- [ ] Any time after
+***/
+.header-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 20px;
+  background: linear-gradient(90deg, var(--button-color), var(--button-hover));
+  color: white;
+  box-shadow: 0px 4px 10px var(--shadow-color);
+  border-radius: 15px;
+}
+
+.logo img {
+  max-height: 60px;
+}
+
+.nav ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+}
+
+.nav ul li {
+  margin: 0 15px;
+}
+
+.nav ul li a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+  transition: color 0.3s;
+}
+
+.nav ul li a:hover {
+  color: var(--accent-color-dark);
+}
+
+/*** footer ***
+
+Purpose:
+- Add style rules for your website's footer section
+
+When To Modify:
+- [ ] Project 3 (STRETCH FEATURE) 
+- [ ] Any time after
+***/
+.footer {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  background: linear-gradient(90deg, var(--footer-bg), var(--border-color));
+  color: var(--text-color);
+  text-align: center;
+  padding: 15px;
+  font-size: 16px;
+  font-weight: bold;
+  border-top: 4px solid var(--button-hover);
+  box-shadow: 0px -4px 10px var(--shadow-color);
+}
+
+.footer:hover {
+  background: linear-gradient(90deg, var(--button-hover), var(--button-color));
+  color: white;
+  text-shadow: 2px 2px 10px var(--shadow-color);
+  transition: all 0.4s ease-in-out;
+}
+
+/*** Schedule Section ***
+
+Purpose:
+- Add style rules for your website's Schedule section
+
+When To Modify:
+- [ ] Project 3 (OPTIONAL)
+- [ ] Project 4 (STRETCH FEATURE) 
+- [ ] Any time after
+***/
+.schedule {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+  padding: 40px 20px;
+}
+
+.event img {
+  max-width: 100%;
+  border-radius: 10px;
+}
+
+/*** Links Section ***
+
+Purpose:
+- Add style rules for your website's Links section
+
+When To Modify:
+- [ ] Project 3 (OPTIONAL)
+- [ ] Project 4 (STRETCH FEATURE) 
+- [ ] Any time after
+***/
+#links {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 30px;
+  padding: 40px 20px;
+}
+
+#links article {
+  max-width: 600px;
+}
+
+/*** Dark Mode [ADDED IN UNIT 5] ***/
+.dark-mode {
+  background-color: #1a1a1a;
+  color: #ffffff;
+}
+
+.dark-mode h1,
+.dark-mode h2,
+.dark-mode h3,
+.dark-mode h4 {
+  color: #ffb3d9;
+}
+
+.dark-mode a {
+  color: #ffd6f0;
+}
+
+.dark-mode .footer {
+  background: linear-gradient(90deg, #2c2c54, #5e5e89);
+  color: white;
+}
+
+.dark-mode .event {
+  background-color: #2a2a40;
+  box-shadow: 0 4px 10px rgba(255, 255, 255, 0.1);
+}
+
+.dark-mode .header-container {
+  background: linear-gradient(90deg, #684fb5, #231942);
+}
+
+/*** Theme Toggle Button Style (Stretch Feature) ***/
+#theme-button {
+  background: linear-gradient(to right, #d2cff5, #ffb3d9);
+  color: #482f95;
+  font-weight: bold;
+  font-family: 'Poppins', sans-serif;
+  border: 2px dotted #ff66b2;
+  padding: 8px 16px;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+#theme-button:hover {
+  background: #ff66b2;
+  color: white;
+}
+
+/*** RSVP [PLACEHOLDER] [ADDED IN UNIT 6] ***/
+
+.error {
+  border: 2px solid red;
+  background-color: #ffe6e6; /* light pink */
+}
+
+
+/*** Animations [PLACEHOLDER] [ADDED IN UNIT 8] ***/
+/*** Success Modal [PLACEHOLDER] [ADDED IN UNIT 9] ***/
+/* Smooth rotation for animated modal image */
+#modal-image {
+  transition: transform 0.3s ease;
+}
+
+/*** Custom Colors (OPTIONAL) ***
+
+Purpose:
+- Use CSS variables to define custom colors for your website
+- To get you started, we've provided the color scheme used in our example site.
+- To reference a color variable in your css, use var(--variable-name) in place of a color value
+
+When To Modify:
+- [ ] Any time (OPTIONAL)
+***/
+:root {
+  /* Light Mode */
+  --bg-color: #ffeaf4;
+  --text-color: #6a0572;
+  --heading-color: #ff5e99;
+  --button-color: #ff99cc;
+  --button-hover: #ff66b2;
+  --border-color: #ffb3d9;
+  --footer-bg: #ffdbed;
+  --shadow-color: rgba(255, 105, 180, 0.5);
+
+  /* Dark Mode */
+  --bg-color-dark-mode: #3e3377;
+  --text-color-dark-mode: #fff;
+
+  /* Accent Colors */
+  --accent-color-light: #d2cff5;
+  --accent-color-medium: #684fb5;
+  --accent-color-dark: #482f95;
+  --accent-color-darkest: #231942;
+  --accent-color-green: #28eb76;
+
+  /* Error Colors */
+  --error-color: #f8bbd0;
+  --error-color-border: #e63946;
+}
+.tagline {
+  font-family: 'Poppins', sans-serif;
+  font-weight: 500;
+  font-size: 20px;
+  color: #ff69b4;
+  margin-top: -10px;
+  margin-bottom: 10px;
+  text-shadow: 1px 1px 5px rgba(255, 105, 180, 0.3);
+}
+

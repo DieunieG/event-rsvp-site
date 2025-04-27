@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head> 
+        <link rel="stylesheet" href="styles.css">
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;700&family=Pacifico&display=swap" rel="stylesheet">
+        <link rel="icon" href="img/clipboard.png" type="image/x-icon"/>
+       
+        <!-- head
+
+        Purpose:
+        - Title used here shows up in the browser tab
+        - Link to the favicon (small image that appears in the browser tab)
+        - Link to the CSS file (used to style the webpage)
+
+        When To Modify:
+        - [ ] Project 2 (REQUIRED FEATURE) 
+        - [ ] Project 2 (STRETCH FEATURE) (favicon)
+        - [ ] Any time after
+        -->
+        <title> Where Beauty Meets Innovation</title>
+        
+        <style>
+            body {
+        background-color: rgb(236, 164, 218);
+        font-family: Arial, sans-serif;
+    }
+             h1 {
+        color: palevioletred;
+        font-family:fantasy;
+        font-size: 36px;
+        text-align: center;
+    }
+    h2{
+        font-family:monospace;
+        font-size: 18px;
+        text-align: center;
+    }
+    button {
+        background-color: black;
+        color: lightpink;
+        padding: 10px 20px;
+        border: none;
+        cursor: pointer;
+    }
+    button:hover {
+        background-color: hotpink;
+    }
+
+    
+            /* Style rules go here. */
+        </style>
+    </head>
+   
+    <body>
+       
+         <!-- navbar -->
+         <div class="header-container">
+            <div class="header-item logo">
+                <img src="image22.jpg" alt="Salon Logo">
+            </div>
+            <div class="header-item nav">
+                <nav>
+                    <ul>
+                        <li><a href="#about">About Us</a></li>
+                        <li><a href="#schedule">Schedule</a></li>
+                        <li><a href="#video">Video</a></li>
+                        <li><a href="#links">Articles</a></li>
+                        <li><button id="theme-button">Toggle Dark Mode</button></li>
+
+                    </ul>
+                </nav>
+            </div>
+        </div>
+
+        <!-- headings
+
+        Purpose:
+        - Main header section of the webpage
+        - Contains the title, subtitle, image, and key buttons for the webpage
+
+        When To Modify:
+        - [ ] Project 2 (REQUIRED FEATURE) 
+        - [ ] Project 3 (REQUIRED FEATURE) 
+        - [ ] Project 4 (REQUIRED FEATURE) 
+        - [ ] Any time after
+        -->
+        <img id="header-img" src="./img/favicon-16x16.png"/>
+        <h1>The Gloss Lab</h1>
+        <h2>Subtitle</h2>
+        <button type="button">Register Now</button>
+        <button type="button">View Schedule</button>
+        <!-- about
+        Purpose:
+        - Section for general info about the event
+        - Contains a video, description, and key points about the event
+
+        When To Modify:
+        - [ ] Project 2 (REQUIRED FEATURE) 
+        - [ ] Project 2 (STRETCH FEATURE) 
+        - [ ] Project 4 (STRETCH FEATURE) 
+        - [ ] Any time between / after
+        --> 
+        <h2 id="about">Experimenting with Style & Tech to Redefine Haircare!</h2>
+
+        <p>The Gloss Lab is a playground for hairstyling innovation, 
+            where beauty professionals and tech enthusiast explore 
+            the latest advancements in smart hair tools, AI-powered hair 
+            diagnostic, and futuristic styling techniques.<p>
+
+            <p>
+             Whether you're a hairstylist looking to integrate tech into your craft, 
+             a beauty lover exploring the latest trends, or a tech innovator developing the next big thing in haircare, 
+             The Gloss Lab is your space to experiment, learn, and transform the way we approach hair and beauty.
+        </p>
+
+        <h3>Smart Styling Starts Here!</h3>
+<h4 class="tagline">Redefining Glam With Smart Innovation.</h4>
+
+        <ul>
+            <li><b>✨ B</b> <i>AI-powered hair analysis for personalized care.</i></li>
+<li><b>💇🏽 </b> <i>Try futuristic styling tools and smart devices.</i></li>
+<li><b>🚀 </b> <i>Explore the future of beauty through hands-on demos.</i></li>
+
+        </ul>
+
+        <!-- schedule
+
+        Purpose:
+        - Section for specific info about the event's schedule
+        - Contains images and descriptions of each activity
+
+        When To Modify:
+        - [ ] Project 2 (REQUIRED FEATURE) 
+        - [ ] Project 4 (STRETCH FEATURE) 
+        - [ ] Any time between / after
+        --> 
+        <h2 id="schedule">The Gloss Lab Event Schedule</h2>
+
+
+        <img src="./img/image.png" alt="Futuristic Salon" width="600">
+        <h3>Mane-Tech Monday</h3>
+        <p>AI meets hair! Get a futuristic hair analysis and let smart tech design your perfect haircare routine.</p>
+            
+        <img src="./img/image2.avif" alt="Futuristic Salon" width="600">
+        <h3>Futuristic Fringe Friday</h3>
+        <p>Time to glow up with high-tech hair tools! Try smart curlers, digital dryers, and self-styling wands.</p>
+
+        <img src="./img/image3.webp" alt="Futuristic Salon" width="600">
+        <h3>Sci-Fi Style Sunday</h3>
+        <p>Test-drive your dream hairstyle with AR magic! Switch colors, lengths, and cuts with a tap.</p>
+
+        <!-- rsvp [PLACEHOLDER] [ADDED IN UNIT 6] -->
+        <div id="rsvp">
+            <h2>RSVP</h2>
+            <p id="rsvp-count">💄 3 glam-lovers have RSVP'd to this beauty-tech experience!</p>
+          
+            <div class="rsvp-container">
+              <div class="rsvp-para">
+                <p>Be part of the beauty-tech revolution! RSVP below to secure your spot at The Gloss Lab's exclusive event where innovation meets glam. Limited seats, endless style!</p>
+              </div>
+              <div class="rsvp-participants">
+                <p>💄 DJ from Texas has RSVP'd.</p>
+                <p>💄 Amy from New York has RSVP'd.</p>
+                <p>💄 Teresa from Montana has RSVP'd.</p>
+              </div>
+            </div>
+          
+            
+          <form id="rsvp-form">
+            <label for="name">Name:</label>
+            <input type="text" id="name" required /><br />
+          
+            <label for="email">Email:</label>
+            <input type="email" id="email" required /><br />
+          
+            <label for="style">Favorite Styling Tool:</label>
+            <input type="text" id="style" required /><br />
+          
+            <button id="rsvp-button" type="submit">Submit RSVP</button>
+          </form>
+          
+          <p id="success-msg" style="display:none; color: green; font-weight: bold;">
+            🎉 RSVP submitted successfully!
+          </p>
+          
+
+
+        
+        <!-- success modal [PLACEHOLDER] [ADDED IN UNIT 9] --> 
+         <!-- success modal -->
+<div id="success-modal" class="modal">
+    <div class="modal-container">
+      <div id="modal-text-container" class="modal-item">
+        <p id="modal-text">🎉 Thanks for RSVPing! See you there!</p>
+      </div>
+      <div class="modal-item">
+        <img id="modal-image" src="img/image.png" alt="Celebrate" width="100" />
+      </div>
+    </div>
+  </div>
+  
+
+        <!-- links
+
+        Purpose:
+        - Links to other resources related to the event
+
+        When To Modify:
+        - [ ] Project 2 (STRETCH FEATURE) 
+        - [ ] Project 4 (STRETCH FEATURE) 
+        - [ ] Any time between / after
+        --> 
+        <section id="video">
+            <p>Watch our event highlights here:</p>
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/7Q_NdDFS7sE?si=odaVAM8lu5Gr_myG" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            
+        <!-- This <a> block is one link.  Copy and paste all 6 lines to create another link. -->
+       
+            <section id="links">
+                <h2>Related Articles</h2>
+                <article>
+                    
+                        <h3>AI in Beauty</h3>
+                        <p>Discover how artificial intelligence is transforming the beauty industry through smart tools and diagnostics.</p>
+                        <a href="https://www.allure.com/story/how-ai-is-changing-beauty" target="_blank">Read More</a>
+                    </article>
+                    <h3>The Future of Hair Salons</h3>
+                    <p>Explore the three key trends shaping the hairstyling industry in this insightful LinkedIn article.</p>
+                    <a href="https://www.linkedin.com/pulse/future-hair-salons-3-key-trends-shaping-hairstylists" target="_blank">
+                        Read More
+                    </a>
+                </article>
+            </section>
+            
+            </article>
+        </a>
+        <footer class="footer">
+            <p>&copy; 2025 The Gloss Lab | Where Beauty Meets Innovation</p>
+        </footer>  
+        <!-- footer [PLACEHOLDER] [ADDED IN UNIT 3] -->
+        <!-- script [PLACEHOLDER] [ADDED IN UNIT 5] -->
+        <script src="index.js"></script>
+
+    </body>
+</html>
