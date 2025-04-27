@@ -1,33 +1,27 @@
-# 🎉 Event RSVP Website
+# The Gloss Lab - Event RSVP Website
 
-This is a responsive Event RSVP website built using **HTML**, **CSS**, and **JavaScript**.  
-It allows users to submit their RSVP for an event and view a live participant list.
+An interactive, responsive event website for "The Gloss Lab" — where beauty meets innovation through AI-powered hairstyling technology. 💄✨
 
----
-
-## 🚀 Features
-- Responsive design for mobile and desktop
-- Interactive RSVP form with live updating
-- Real-time display of RSVP participant names
-- Simple and clean UI
-- Image assets and favicon support
-
----
+## ✨ Features
+- 🌸 Fully responsive across desktop and mobile
+- 🖋️ Modern UI/UX design with custom fonts and animations
+- 🌙 Dark Mode toggle with smooth theme switching
+- 📝 RSVP Form with live participant updates and input validation
+- 🎉 Animated Success Modal after RSVP submission
+- ⏳ Countdown and schedule for multi-day event highlights
+- 🔗 External resource links to AI and beauty industry articles
+- 🎥 Embedded YouTube video highlights
 
 ## 🛠️ Built With
-- **HTML5**
-- **CSS3**
-- **JavaScript (Vanilla JS)**
+- HTML5
+- CSS3 (with variables, animations, dark mode theming)
+- Vanilla JavaScript (form validation, modal popups, theme toggle)
+- Responsive Design Techniques
 
----
+## 🌐 Live Demo
+[Visit Live Website](https://drawing-flexible-stream-277.vscodeedu.app)
 
-## 📂 Project Structure
-
-## ✍🏽 Author
-**Dieunie Gousse**  
-📬 [Email Me](mailto:mariedgousse@gmail.com)
-
----
-
-## 📜 License
-This project is open source and available under the [MIT License](LICENSE).
+## 🚀 How to Run Locally
+1. Clone the repository:
+   ```bash
+   git clone https://github.com/Dieunieg/event-rsvp-website.git
